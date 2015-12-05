@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test task</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+
+</head>
+<body>
+	<div id="loading" style="position: fixed; left: 15px; top: 15px; display: none;">
+		<img src="ajax-loader.gif">
+	</div>
+	<div class="container">
+		<div class="col-md-3 col-md-offset-2">
+
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					Departments
+				</div>
+				<div class="panel-body">
+					<h3>Add department</h3>
+					<div class="input-group">
+						
+						<input type="text" class="form-control" id="dep-name" placeholder="Department name">
+						<div class="btn btn-primary" id="add-dep">Add department</div>
+					</div>
+
+					<h3>Departments</h3>
+					<div id="deps"></div>
+					
+					<div class="btn btn-warning" id="remove-deps">Remove checked</div>
+				</div>
+			</div>
+
+
+		</div>
+		<div class="col-md-5">
+
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					Employees
+				</div>
+				<div class="panel-body">
+					<h3>Add employee</h3>
+					<div class="input-group">
+
+						<input type="text" class="form-control" id="emp-name" placeholder="Employee name">
+						<select class="form-control" id="dep-select"></select>
+						<div class="btn btn-primary" id="add-emp">Add employee</div>
+					</div>
+
+					<h3>Employees</h3>
+					<div id="emps"></div>
+					
+					<div class="btn btn-warning" id="remove-emps">Remove checked</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+	<script type="text/javascript" src="jquery.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>	
+	<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
